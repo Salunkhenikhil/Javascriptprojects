@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: darksalmon;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color:rgba(113, 207, 208, 0.933);
+    width: 400px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.textarea{
+    resize: none;
+    width: 75%;
+    height: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 3px darkgray;
+}
+
+.counter-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.counter-container p{
+    font-size: 20px;
+    color:  rgb(62, 60, 60);
+}
+
+.total-counter{
+    color:crimson
+}
+
+.remain-counter{
+    color: orangered;
+}

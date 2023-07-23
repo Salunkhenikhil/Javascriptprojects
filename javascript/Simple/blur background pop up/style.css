@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("https://img.freepik.com/premium-photo/gaming-desktop-pc-computer-setup-gamer-illustration_691560-5795.jpg");
+  background-size: cover;
+  transition: filter 0.3s;
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(222, 234, 245);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.btn {
+  padding: 15px 25px;
+  width: 200px;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  filter: brightness(0.85);
+}
+.container.active {
+  filter: blur(5px) brightness(0.7);
+}
+.popup-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  top: 30%;
+  padding: 20px;
+  background: url("https://t3.ftcdn.net/jpg/05/27/44/52/360_F_527445207_LfBZ3V7U0Azb2SA81zyoGeR6WGXG9CNn.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  color: rgb(36, 4, 199);
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(36, 4, 199);
+}
+.pop-btn {
+  background-color: orangered;
+  padding: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 255, 255);
+}
+
+.pop-btn:hover {
+  filter: brightness(0.9);
+}
+.input {
+  border: 2px solid rgb(0, 255, 255);
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: gray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: red;
+}
+.popup-container.active {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}

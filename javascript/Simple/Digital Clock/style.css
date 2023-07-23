@@ -1,0 +1,67 @@
+/* Set the margin and font family for the body */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("bg4.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Style the heading */
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: cornsilk;
+}
+
+/* Style the clock container */
+.clock {
+    display: flex;
+}
+
+/* Style each clock segment */
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+
+/* Style the clock numbers */
+.clock span {
+    width: 150px;
+    height: 120px;
+    background: palevioletred;
+    opacity: 0.9;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    text-shadow: 9px 9px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the clock text */
+.clock .Text {
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: plum;
+    opacity: 0.9;
+}
+
+/* Style the AM/PM indicator */
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    background: plum;
+}

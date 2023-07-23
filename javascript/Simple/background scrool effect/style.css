@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.bgimg {
+  width: 100%;
+  height: 100vh;
+  background: url("https://funmauj.b-cdn.net/test/690067.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+}
+
+p {
+  color: rgb(5, 101, 5);
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+}

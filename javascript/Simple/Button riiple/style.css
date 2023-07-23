@@ -1,0 +1,48 @@
+body {
+    /* Set margin and flex properties to center content vertically and horizontally */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(228, 49, 85);
+    font-family:    'Arial Narrow Bold';
+}
+
+.button {
+    /* Style for the button */
+    background-color:tomato;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span {
+    /* Style for span inside the button */
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    /* Create a circular shape using pseudo-element ::before */
+    content: "";
+    position: absolute;
+    background-color: brown;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height .5s; /* Smoothly transition width and height changes */
+}
+
+.button:hover::before {
+    /* Enlarge the circular shape on hover */
+    width: 300px;
+    height: 300px;
+}
