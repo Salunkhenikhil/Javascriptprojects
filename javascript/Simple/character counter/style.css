@@ -1,48 +1,68 @@
-body{
-    margin: 0;
-    display:flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background-color: darksalmon;
-    font-family: 'Times New Roman', Times, serif;
+/* Reset margin for the body to remove any default spacing and center the content */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  /* Set background color */
+  background-color: darksalmon;
+  /* Set font family for the whole page */
+  font-family: "Times New Roman", Times, serif;
 }
 
-.container{
-    background-color:rgba(113, 207, 208, 0.933);
-    width: 400px;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+/* Main container styling */
+.container {
+  /* Set background color with transparency */
+  background-color: rgba(113, 207, 208, 0.933);
+  width: 400px;
+  padding: 20px;
+  margin: 5px;
+  /* Add rounded corners to the container */
+  border-radius: 10px;
+  /* Add box shadow for a subtle depth effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.textarea{
-    resize: none;
-    width: 75%;
-    height: 100px;
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 10px;
-    box-sizing: border-box;
-    border: solid 3px darkgray;
+/* Textarea styling */
+.textarea {
+  /* Disable textarea resizing */
+  resize: none;
+  width: 75%;
+  height: 100px;
+  font-size: 20px;
+  /* Set font family for textarea */
+  font-family: sans-serif;
+  padding: 10px;
+  /* Include padding and border in the width calculation */
+  box-sizing: border-box;
+  /* Add border to the textarea */
+  border: solid 3px darkgray;
 }
 
-.counter-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
+/* Styling for the counter container */
+.counter-container {
+  /* Display the elements inside the container with space between them */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
 }
 
-.counter-container p{
-    font-size: 20px;
-    color:  rgb(62, 60, 60);
+/* Styling for the paragraphs inside the counter container */
+.counter-container p {
+  font-size: 20px;
+  /* Set font color */
+  color: rgb(62, 60, 60);
 }
 
-.total-counter{
-    color:crimson
+/* Styling for the total character counter */
+.total-counter {
+  /* Set font color for the total counter */
+  color: crimson;
 }
 
-.remain-counter{
-    color: orangered;
+/* Styling for the remaining character counter */
+.remain-counter {
+  /* Set font color for the remaining counter */
+  color: orangered;
 }

@@ -1,26 +1,31 @@
+/* Reset margin for the body to remove any default spacing */
 body {
   margin: 0;
 }
 
+/* Main content container styling */
 .container {
+  /* Center the content both horizontally and vertically */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   justify-content: center;
+  height: 100vh; /* Make the container fill the viewport's height */
   background: url("https://img.freepik.com/premium-photo/gaming-desktop-pc-computer-setup-gamer-illustration_691560-5795.jpg");
-  background-size: cover;
-  transition: filter 0.3s;
+  background-size: cover; /* Scale the background image to cover the container */
+  transition: filter 0.3s; /* Add a smooth transition effect to the filter property */
 }
 
+/* Main heading (h1) styling */
 h1 {
   font-size: 60px;
   color: rgb(222, 234, 245);
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1px;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Add a shadow effect to the text */
 }
 
+/* "Join us now" button styling */
 .btn {
   padding: 15px 25px;
   width: 200px;
@@ -31,12 +36,20 @@ h1 {
   font-size: 20px;
 }
 
+/* Hover effect for the "Join us now" button */
 .btn:hover {
-  filter: brightness(0.85);
+  filter: brightness(
+    0.85
+  ); /* Reduce brightness on hover to create a subtle effect */
 }
+
+/* Active state styling for the main content container */
 .container.active {
+  /* Apply a blur and reduced brightness when the container is active */
   filter: blur(5px) brightness(0.7);
 }
+
+/* Pop-up container styling */
 .popup-container {
   position: fixed;
   left: 50%;
@@ -49,13 +62,14 @@ h1 {
   top: 30%;
   padding: 20px;
   background: url("https://t3.ftcdn.net/jpg/05/27/44/52/360_F_527445207_LfBZ3V7U0Azb2SA81zyoGeR6WGXG9CNn.jpg");
-  background-size: cover;
+  background-size: cover; /* Scale the background image to cover the container */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: 0.7s;
+  opacity: 1; /* Set initial opacity to 1 */
+  transition: 0.7s; /* Add a smooth transition effect to the container */
 }
 
+/* Pop-up heading (h3) styling */
 h3 {
   font-size: 30px;
   margin: 10px 0;
@@ -63,11 +77,14 @@ h3 {
   color: rgb(36, 4, 199);
 }
 
+/* Label styling */
 label {
   font-family: sans-serif;
   font-size: 20px;
   color: rgb(36, 4, 199);
 }
+
+/* Pop-up button styling */
 .pop-btn {
   background-color: orangered;
   padding: 10px 0;
@@ -76,9 +93,14 @@ label {
   border: 2px solid rgb(0, 255, 255);
 }
 
+/* Hover effect for the pop-up button */
 .pop-btn:hover {
-  filter: brightness(0.9);
+  filter: brightness(
+    0.9
+  ); /* Reduce brightness on hover to create a subtle effect */
 }
+
+/* Input field styling */
 .input {
   border: 2px solid rgb(0, 255, 255);
   padding: 10px 0;
@@ -87,21 +109,26 @@ label {
   text-align: center;
 }
 
+/* Placeholder text styling */
 .input::placeholder {
   color: gray;
 }
 
+/* Close icon styling */
 .close-icon {
   position: absolute;
   right: 20px;
   cursor: pointer;
 }
 
+/* Hover effect for the close icon */
 .close-icon:hover {
-  color: red;
+  color: red; /* Change the color on hover to indicate interactivity */
 }
+
+/* Active state styling for the pop-up container */
 .popup-container.active {
-  visibility: hidden;
-  opacity: 0;
-  top: 10%;
+  visibility: hidden; /* Hide the pop-up container when it's active */
+  opacity: 0; /* Set opacity to 0 for a smooth transition effect */
+  top: 10%; /* Adjust the position to create a slide-down effect */
 }

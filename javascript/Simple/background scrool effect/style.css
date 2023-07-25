@@ -1,32 +1,43 @@
+/* Reset margin for the body to remove any default spacing */
 body {
   margin: 0;
+  background-color: rgba(5, 101, 5, 0.7);
 }
 
+/* Background image styling */
 .bgimg {
   width: 100%;
   height: 100vh;
+  /* Set the background image URL */
   background: url("https://funmauj.b-cdn.net/test/690067.jpg");
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
 }
 
+/* Container styling */
 .container {
   padding: 100px;
 }
 
+/* Heading 1 styling */
 h1 {
   font-size: 50px;
 }
+
+/* Heading 3 styling */
 h3 {
   font-size: 30px;
 }
 
+/* Paragraph text color */
 p {
-  color: rgb(5, 101, 5);
+  color: rgb(0, 0, 0);
 }
 
+/* Responsive styling for screens with a maximum width of 500px */
 @media (max-width: 500px) {
+  /* Reduce padding for the container on smaller screens */
   .container {
     padding: 10px;
   }

@@ -1,27 +1,47 @@
+<!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
+
+<!-- Root HTML element with 'en' (English) as the language -->
 <html lang="en">
   <head>
+    <!-- Meta tag specifying the character encoding for the page -->
     <meta charset="UTF-8" />
+
+    <!-- Meta tag for responsive design on various devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the web page -->
     <title>Feedback UI</title>
+
+    <!-- Link to an external CSS file named 'style.css' -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link rel="stylesheet" href="style.css" />
+
   <body>
+    <!-- Container div for the main content with an ID 'container' -->
     <div class="container" id="container">
+      <!-- Heading for the feedback UI -->
       <h1 class="heading">Feedback UI</h1>
+
+      <!-- Ratings container to display different ratings -->
       <div class="ratings-container" id="ratings-container">
+        <!-- Rating element for the "Satisfied" rating -->
         <div class="rating" id="rating">
           <img
             src="https://gifdb.com/images/high/blushing-hug-emoji-3oiog8j560s1blzu.gif"
           />
           <small>Satisfied</small>
         </div>
+
+        <!-- Rating element for the "Neutral" rating -->
         <div class="rating" id="rating">
           <img
             src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/neutral-face_1f610.gif"
           />
           <small>Neutral</small>
         </div>
+
+        <!-- Rating element for the "Angry" rating -->
         <div class="rating" id="rating">
           <img
             src="https://gifdb.com/images/high/turning-red-emoji-angry-face-ea19qyz8py6o4gii.gif"
@@ -29,8 +49,12 @@
           <small>Angry</small>
         </div>
       </div>
+
+      <!-- Button to submit the review -->
       <button class="btn" id="btn">Send Review</button>
     </div>
+
+    <!-- Script tag to include an external JavaScript file named 'index.js' -->
     <script src="index.js"></script>
   </body>
 </html>

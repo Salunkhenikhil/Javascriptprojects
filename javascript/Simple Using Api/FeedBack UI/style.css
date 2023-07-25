@@ -1,3 +1,4 @@
+/* Styling for the body element */
 body {
   margin: 0;
   display: flex;
@@ -7,6 +8,8 @@ body {
   background-color: rgb(18, 239, 239);
   color: crimson;
 }
+
+/* Styling for the container element */
 .container {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.9);
@@ -18,22 +21,26 @@ body {
   font-size: 25px;
 }
 
+/* Styling for the heading element */
 .heading {
   margin: 5px;
   font-size: 30px;
 }
 
+/* Styling for the ratings container element */
 .ratings-container {
   display: flex;
   padding: 20px 0px;
 }
 
+/* Styling for each rating element */
 .rating {
   cursor: pointer;
   padding: 10px;
   margin: 10px 5px;
 }
 
+/* Styling for the hovered or active rating element */
 .rating:hover,
 .rating.active {
   background-color: rgba(100, 149, 237, 0.5);
@@ -42,6 +49,7 @@ body {
   transition: all 500ms ease;
 }
 
+/* Styling for the button element */
 .btn {
   background-color: darkgreen;
   color: aliceblue;
@@ -52,15 +60,18 @@ body {
   cursor: pointer;
 }
 
+/* Styling for the button on hover */
 .btn:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transition: all 400ms ease;
 }
 
+/* Styling for the button when pressed */
 .btn:active {
   transform: scale(0.95);
 }
 
+/* Styling for the images inside the rating elements */
 .rating img {
   width: 80px;
 }

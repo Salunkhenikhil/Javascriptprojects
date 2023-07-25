@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8" />
+    <!-- Responsive viewport settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>video pop up</title>
+    <!-- Page title -->
+    <title>Video Pop Up</title>
+    <!-- Font Awesome CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,15 +15,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- External CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Main container for movie information -->
     <div class="main-container">
+      <!-- Movie image -->
       <img
         src="https://c4.wallpaperflare.com/wallpaper/793/126/441/one-piece-monkey-d-luffy-sabo-portgas-d-ace-wallpaper-preview.jpg"
         alt="movie"
       />
+      <!-- Movie title -->
       <h1>One Piece Ocean's Fury: The Final Clash</h1>
+      <!-- Movie description -->
       <p>
         One Piece (stylized in all caps) is a Japanese manga series written and
         illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen
@@ -30,12 +39,17 @@
         treasure known as the "One Piece" in order to become the next King of
         the Pirates.
       </p>
-      <button class="button">watch now</button>
+      <!-- Button to watch the movie -->
+      <button class="button">Watch Now</button>
     </div>
+    <!-- Container for the video trailer popup -->
     <div class="trailer-container active">
+      <!-- Video trailer with controls -->
       <video src="trailer.mp4" controls></video>
+      <!-- Close icon for the popup -->
       <i class="fa-solid fa-square-xmark fa-2x close-icon"></i>
     </div>
+    <!-- External JavaScript file -->
     <script src="index.js"></script>
   </body>
 </html>

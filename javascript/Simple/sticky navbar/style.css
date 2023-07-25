@@ -1,7 +1,9 @@
+/* Set margin to 0 for the body */
 body {
   margin: 0;
 }
 
+/* Styling for the top container with a background image */
 .top-container {
   background-image: url("https://images.unsplash.com/photo-1687100626386-0ece6d8a4452?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80");
   height: 100vh;
@@ -11,6 +13,7 @@ body {
   align-items: center;
 }
 
+/* Styling for the h1 element inside the top container */
 .top-container h1 {
   color: white;
   font-size: 50px;
@@ -18,11 +21,13 @@ body {
   letter-spacing: 2px;
 }
 
+/* Margin and font family for text paragraphs */
 .text {
   margin: 50px 5%;
   font-family: sans-serif;
 }
 
+/* Styling for the navbar */
 .navbar {
   display: flex;
   position: fixed;
@@ -34,12 +39,14 @@ body {
   transition: background-color 0.4s;
 }
 
+/* Styling for the unordered list inside the navbar */
 .navbar ul {
   display: flex;
   list-style-type: none;
   padding-top: 50px;
 }
 
+/* Styling for the links in the navbar */
 .navbar ul li a {
   text-decoration: none;
   margin: 0 10px;
@@ -47,14 +54,17 @@ body {
   font-family: cursive;
 }
 
+/* Hover effect for the links in the navbar */
 .navbar ul li a:hover {
   color: rgb(23, 138, 232);
 }
 
+/* Styling for the active state of the navbar */
 .navbar.active {
   background-color: black;
 }
 
+/* Styling for the links in the active state of the navbar */
 .navbar.active ul li a {
   color: white;
 }

@@ -1,3 +1,6 @@
+/* CSS for Singer Kits App */
+
+/* Global styles */
 body {
   margin: 0;
   display: flex;
@@ -8,6 +11,7 @@ body {
   background-color: bisque;
 }
 
+/* Heading styles */
 h1 {
   font-size: 50px;
   font-family: "Arial Narrow Bold";
@@ -17,10 +21,12 @@ h1 {
   white-space: nowrap;
 }
 
+/* Container styles */
 .container {
   text-align: center;
 }
 
+/* Singer button styles */
 .singer {
   padding: 40px 50px;
   background-color: white;
@@ -41,10 +47,12 @@ h1 {
   text-transform: capitalize;
 }
 
+/* Singer button hover effect */
 .singer:hover {
   color: darksalmon;
 }
 
+/* Singer button active effect */
 .singer:active {
   background-size: 105%;
 }

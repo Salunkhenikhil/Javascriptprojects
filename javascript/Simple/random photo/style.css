@@ -1,3 +1,4 @@
+/* Apply basic styles to the body */
 body {
   margin: 0;
   display: flex;
@@ -6,10 +7,12 @@ body {
   background-color: azure;
 }
 
+/* Center align the images in the container */
 .img-container {
   text-align: center;
 }
 
+/* Style for each image in the container */
 .img-container img {
   margin: 10px;
   border-radius: 10px;
@@ -19,6 +22,7 @@ body {
   height: 300px;
 }
 
+/* Style for the "Load More" button */
 .btn {
   background-color: skyblue;
   border: none;
@@ -29,6 +33,7 @@ body {
   cursor: pointer;
 }
 
+/* Hover effect for the button */
 .btn:hover {
   opacity: 0.9;
 }

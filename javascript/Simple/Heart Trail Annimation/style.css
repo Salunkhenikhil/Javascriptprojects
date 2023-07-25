@@ -1,3 +1,4 @@
+/* Set margin, height, background color, and prevent overflow for the <body> */
 body {
   margin: 0;
   height: 100vh;
@@ -5,25 +6,32 @@ body {
   overflow: hidden;
 }
 
+/* Styling for the <span> element representing the heart icon */
 span {
+  /* Use heart icon as background image */
   background: url("https://icons.iconarchive.com/icons/succodesign/love-is-in-the-web/256/heart-icon.png");
   width: 100px;
   height: 100px;
+  /* Position the heart in the center of the screen */
   position: absolute;
   pointer-events: none;
   background-size: cover;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  /* Animation to create movement and fading effect */
   animation: animate 6s linear;
 }
 
+/* Keyframes for the animation */
 @keyframes animate {
+  /* Starting position and appearance */
   0% {
     transform: translate(-50%, -50%);
     opacity: 1;
     filter: hue-rotate(0);
   }
+  /* Ending position and disappearance */
   100% {
     transform: translate(-50%, -5000%);
     opacity: 0;
