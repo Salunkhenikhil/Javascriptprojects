@@ -1,0 +1,57 @@
+<!-- HTML5 doctype declaration -->
+<!DOCTYPE html>
+
+<!-- Root HTML element with 'en' (English) as the language -->
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the web page -->
+    <title>BMI Calculator</title>
+
+    <!-- Link to external CSS file named 'style.css' -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Container div for the BMI calculator content -->
+    <div class="container">
+      <!-- Heading for the BMI calculator -->
+      <h1 class="heading">Body Mass Index(BMI) Calculator</h1>
+
+      <!-- Input field for entering height in cm -->
+      Your Height (cm):
+      <input
+        type="number"
+        placeholder="Enter Your Height in cm"
+        class="input"
+        id="height"
+      />
+
+      <!-- Input field for entering weight in kg -->
+      Your Weight (kg):
+      <input
+        type="number"
+        placeholder="Enter Your Weight in kg"
+        class="input"
+        id="weight"
+      />
+
+      <!-- Button to calculate BMI -->
+      <button class="btn" id="btn">Calculate Bmi</button>
+
+      <!-- Input field to display calculated BMI (disabled) -->
+      <input disabled type="text" class="input" id="result" />
+
+      <!-- Information text for weight condition -->
+      <h4 class="info-text">
+        Weight condition: <span id="weight-condition"></span>
+      </h4>
+    </div>
+
+    <!-- Script tag to include an external JavaScript file named 'index.js' -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!-- HTML5 doctype declaration -->
+<!DOCTYPE html>
+
+<!-- Root HTML element with 'en' (English) as the language -->
+<html lang="en">
+  <head>
+    <!-- Meta tag specifying the character encoding for the page -->
+    <meta charset="UTF-8" />
+
+    <!-- Meta tag for responsive design on various devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the web page -->
+    <title>English Dictionary</title>
+
+    <!-- Link to an external CSS file named 'style.css' -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Container div for the main content -->
+    <div class="container">
+      <!-- Heading for the English Dictionary -->
+      <h1 class="heading" id="heading">English Dictionary</h1>
+
+      <!-- Input element for user to search for a word -->
+      <input
+        placeholder="Search Your Text"
+        type="text"
+        class="input"
+        id="input"
+      />
+
+      <!-- Paragraph to provide user instructions -->
+      <p class="info-text" id="info-text">Type a word and press enter</p>
+
+      <!-- Div to display the word and its meaning -->
+      <div class="mean-container" id="mean-container">
+        <p>Word: <span class="title" id="title">______</span></p>
+        <p>Meaning: <span class="meaning" id="meaning">______</span></p>
+        <audio src="" id="audio" controls></audio>
+      </div>
+    </div>
+
+    <!-- Script tag to include an external JavaScript file named 'index.js' -->
+    <script src="index.js"></script>
+  </body>
+</html>

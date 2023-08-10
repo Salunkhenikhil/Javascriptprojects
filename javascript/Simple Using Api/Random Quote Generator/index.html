@@ -1,0 +1,52 @@
+<!-- HTML5 doctype declaration -->
+<!DOCTYPE html>
+
+<!-- Root HTML element with 'en' (English) as the language -->
+<html lang="en">
+  <head>
+    <!-- Meta tag specifying the character encoding for the page -->
+    <meta charset="UTF-8" />
+
+    <!-- Meta tag for responsive design on various devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the web page -->
+    <title>Random Quote Generator</title>
+
+    <!-- Link to an external CSS file for Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link to an external CSS file named 'style.css' -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Container div for the main content -->
+    <div class="container" id="container">
+      <!-- Title for the Random Quote Generator -->
+      <h1 class="title" id="title">Random Quote Generator</h1>
+
+      <!-- Quote section with Font Awesome icons -->
+      <h2 class="qoute" id="qoute">
+        <i class="fa-solid fa-quote-left"></i
+        ><span id="quote" class="quote">Quote</span
+        ><i class="fa-solid fa-quote-right"></i>
+      </h2>
+
+      <!-- Author of the quote -->
+      <p class="author" id="author">~ Author</p>
+
+      <!-- Button to get a new quote -->
+      <button class="btn" id="btn">Get Quote</button>
+    </div>
+
+    <!-- Script tag to include an external JavaScript file named 'index.js' -->
+    <script src="index.js"></script>
+  </body>
+</html>

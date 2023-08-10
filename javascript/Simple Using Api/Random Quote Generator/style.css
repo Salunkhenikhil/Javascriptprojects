@@ -1,0 +1,61 @@
+/* Styling for the body element */
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  background: linear-gradient(to left bottom, lightpink, lightgreen);
+}
+
+/* Styling for the container element */
+.container {
+  background-color: rgba(255, 255, 25, 0.11);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  margin: 25px;
+  text-align: center;
+}
+
+/* Styling for the title element */
+.title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* Styling for the quote element */
+.qoute {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Styling for the author element */
+.author {
+  font-size: 25px;
+  margin: 10px;
+  font-style: italic;
+}
+
+/* Styling for the button element */
+.btn {
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(252, 154, 7, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  width: 300px;
+}
+
+/* Styling for the button on hover */
+.btn:hover {
+  background-color: rgba(252, 154, 7, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+  transition: all 300ms ease-in-out;
+  color: crimson;
+}

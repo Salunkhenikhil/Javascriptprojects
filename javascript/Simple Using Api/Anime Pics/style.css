@@ -1,0 +1,73 @@
+/* Styling for the body element */
+body {
+  margin: 0;
+  background: linear-gradient(to right top, lightblue, crimson);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+/* Styling for the main content container */
+.container {
+  background: aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+  width: 450px;
+  margin: 5px;
+}
+
+/* Styling for the button */
+.btn {
+  background-color: lightyellow;
+  color: crimson;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the button when disabled */
+.btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Styling for the button when disabled and hovered */
+.btn:disabled:hover {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Styling for the button on hover */
+.btn:hover {
+  background-color: rgba(246, 246, 157, 0.7);
+}
+
+/* Styling for the anime image */
+.anime-img {
+  height: 300px;
+  width: 400px;
+  border-radius: 5%;
+  border: 3px solid skyblue;
+}
+
+/* Styling for the anime name */
+.name {
+  margin: 20px;
+  background-color: rgb(248, 248, 167);
+  color: crimson;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Styling for the container when the image is hidden */
+.img-container {
+  display: none;
+}

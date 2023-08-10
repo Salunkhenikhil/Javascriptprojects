@@ -1,0 +1,53 @@
+/* Set up the overall layout and background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left bottom, lightblue, lightgreen);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  color: darkcyan;
+}
+
+/* Styling for the container */
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 85%;
+  max-width: 450px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for temperature containers */
+.temp-container {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* Styling for input fields */
+.input {
+  width: 200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px;
+  float: right;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: green;
+  font-size: 17px;
+}
+
+/* Styling for input field placeholder text */
+.input::placeholder {
+  color: darkgray;
+}

@@ -1,0 +1,48 @@
+/* Styling for the body element */
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  background-color: lightcoral;
+}
+
+/* Styling for the heading */
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+/* Styling for the main content container */
+.container {
+  text-align: center;
+}
+
+/* Styling for the button */
+.btn {
+  font-size: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  filter: grayscale(); /* Apply grayscale effect */
+  transition: filter 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Styling for the button on hover */
+.btn:hover {
+  filter: grayscale(0); /* Remove grayscale effect on hover */
+}
+
+/* Styling for the emoji name */
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
