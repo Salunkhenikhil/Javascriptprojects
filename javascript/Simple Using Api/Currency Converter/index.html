@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Heading -->
+      <h1 class="heading">Currency Converter</h1>
+
+      <!-- First currency input container -->
+      <div class="currency-container">
+        <!-- Dropdown for first currency selection -->
+        <select id="currency-first" class="currency-first">
+          <option value="INR" selected>INR</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+          <option value="USD">USD</option>
+          <option value="JPY">JPY</option>
+          <option value="CHF">CHF</option>
+          <option value="CAD">CAD</option>
+          <option value="NZD">NZD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+
+        <!-- Input for first currency amount -->
+        <input type="number" value="1" min="0" id="worth-first" />
+      </div>
+
+      <!-- Second currency input container -->
+      <div class="currency-container">
+        <!-- Dropdown for second currency selection -->
+        <select id="currency-second" class="currency-second">
+          <option value="INR">INR</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD" selected>USD</option>
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CHF">CHF</option>
+          <option value="CAD">CAD</option>
+          <option value="NZD">NZD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+
+        <!-- Input for second currency amount (disabled) -->
+        <input type="number" id="worth-second" disabled />
+      </div>
+
+      <!-- Display exchange rate -->
+      <p class="exchange-rate" id="exchange-rate"></p>
+    </div>
+
+    <!-- Include JavaScript file for functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>

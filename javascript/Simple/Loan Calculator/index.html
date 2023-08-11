@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container for loan calculator -->
+    <div class="container">
+      <!-- Heading for the loan calculator -->
+      <h1 class="heading">Loan Calculator</h1>
+
+      <!-- Loan Amount Input -->
+      Loan Amount $
+      <input
+        onchange="emicalc()"
+        type="number"
+        placeholder="Enter loan amount"
+        class="input"
+        id="amount"
+        value="10000"
+        min="10000"
+        max="100000000"
+      />
+
+      <!-- Interest Rate Input -->
+      Interest Rate %
+      <input
+        onchange="emicalc()"
+        type="number"
+        placeholder="Enter rate of interest"
+        class="input"
+        id="rate"
+        value="10"
+        step=".1"
+        min="0"
+        max="90"
+      />
+
+      <!-- Months to Pay Input -->
+      Months to pay %
+      <input
+        onchange="emicalc()"
+        type="number"
+        class="input"
+        id="duration"
+        value="12"
+        min="6"
+        max="72"
+      />
+
+      <!-- Display Monthly Payment -->
+      <h4 class="info-text">Monthly Pay: <span id="Monthly"></span></h4>
+
+      <!-- Display Total Loan Amount -->
+      <h4 class="info-text">Total Amount: <span id="Total"></span></h4>
+    </div>
+
+    <!-- Include JavaScript code from external file -->
+    <script src="index.js"></script>
+  </body>
+</html>

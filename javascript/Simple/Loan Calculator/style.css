@@ -1,0 +1,39 @@
+/* Set margin, height, and flex display for the body */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  background: ghostwhite;
+}
+
+/* Styling for the main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  background: darkcyan;
+  border-radius: 10px;
+  padding: 20px;
+  color: rgba(240, 245, 255, 0.5);
+}
+
+/* Styling for the heading */
+.heading {
+  font-size: 30px;
+  color: aliceblue;
+  padding: 10px;
+}
+
+/* Styling for input elements */
+.input {
+  padding: 5px;
+  height: 20px;
+}
+
+/* Styling for information text */
+.info-text {
+  color: aliceblue;
+  font-size: 20px;
+}

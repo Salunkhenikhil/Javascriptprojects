@@ -1,0 +1,53 @@
+/* Styling for the entire page */
+body {
+  background-color: lightblue;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the main content container */
+.container {
+  background-color: darkcyan;
+  color: ghostwhite;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling for the currency input containers */
+.currency-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for dropdown select elements within currency containers */
+.currency-container select {
+  padding: 10px;
+}
+
+/* Styling for input elements within currency containers */
+.currency-container input {
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+  text-align: right;
+  color: ghostwhite;
+}
+
+/* Styling for the exchange rate text */
+.exchange-rate {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Remove outline on focus for select and input elements */
+select:focus,
+input:focus {
+  outline: 0;
+}

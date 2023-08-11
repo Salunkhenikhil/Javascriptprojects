@@ -1,0 +1,53 @@
+/* Body styling */
+body {
+  /* Center content both horizontally and vertically */
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(to top left, crimson, lightblue, lightyellow);
+  color: darkcyan;
+}
+
+/* Container styling */
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 75%;
+  max-width: 450px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: large;
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Input styling */
+.input {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: darkolivegreen;
+  outline: rgba(255, 255, 255, 0.5);
+}
+
+/* Error message styling */
+.error {
+  color: red;
+}

@@ -1,0 +1,37 @@
+<!-- HTML structure for the Weight Converter web application -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Heading -->
+      <h1 class="heading">Weight Converter</h1>
+      <!-- Input container for pounds -->
+      <div class="input-container">
+        <!-- Label and input for pounds -->
+        <label for="pound">Pound:</label>
+        <input
+          type="number"
+          class="input"
+          id="input"
+          placeholder="Enter Your Weight"
+          step="0.1"
+        />
+      </div>
+      <!-- Display converted weight in kg -->
+      <p id="result">Your Weight in kg is: <span id="result-kg"></span></p>
+      <!-- Display error messages -->
+      <p id="error" class="error"></p>
+    </div>
+    <!-- Include JavaScript file for functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>
