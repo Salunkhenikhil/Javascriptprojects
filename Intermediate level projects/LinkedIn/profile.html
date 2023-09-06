@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedDown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-------------- Navbar -------------->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <div class="searchbox">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Job</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /><span>Notification</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/profile-pic (1).png"
+            class="nav-profile-img"
+            onclick="togglemenu()"
+          />
+        </div>
+      </div>
+
+      <!-------------- Profile Dropdown Menu -------------->
+      <div class="profile-dropdown-menu" id="profile-dropdown-menu">
+        <div class="profile">
+          <div class="userinfo">
+            <img src="images/profile-pic (1).png" />
+            <div>
+              <h3>Nikhil Salunkhe</h3>
+              <a href="profile.html">See Your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="menu-links">
+            <img src="images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="menu-links">
+            <img src="images/setting.png" />
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="menu-links">
+            <img src="images/help.png" />
+            <p>Help</p>
+            <span>></span>
+          </a>
+          <a href="#" class="menu-links">
+            <img src="images/display.png" />
+            <p>Display & Accessiblity</p>
+            <span>></span>
+          </a>
+          <a href="#" class="menu-links">
+            <img src="images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-------------- Navbar End -------------->
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="container-inner">
+            <img src="images/profile-pic (1).png" class="profile-pic" />
+            <h1>Nikhil Salunkhe</h1>
+            <b
+              >Full Stack Web Developer | Former Intern at RacksonsIt Developer
+              pvt ltd and Student at FTCOER</b
+            >
+            <p>Mumbai, India &middot; <a href="#">Contact info</a></p>
+            <div class="mutual-connection">
+              <img src="images/user1.jpeg" />
+              <span>1 mutual connection: Rahul Kharade</span>
+            </div>
+            <div class="profile-button">
+              <a href="#" class="primary"
+                ><img src="images/connect.png" />Connect</a
+              >
+              <a href="#"><img src="images/chat.png" />Message</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-desc">
+          <h2>About</h2>
+          <p>
+            I'm a Full Stack Web Developer based in Mumbai, India. Formerly an
+            intern at RacksonsIt Developer Pvt Ltd, I'm currently a student at
+            FTCOER, continually expanding my web development skills. I'm
+            passionate about creating web solutions that enhance user
+            experiences. Let's connect and explore opportunities in the web
+            development world!
+          </p>
+          <a href="#" class="see-more-links">See more...</a>
+        </div>
+        <div class="profile-desc">
+          <h2>Experience</h2>
+          <div class="profile-desc-row">
+            <img src="images/jobs.png" />
+            <div>
+              <h3>Internship</h3>
+              <b>Profound Edutech &middot; Full-time</b>
+              <b>Nov 2022 - Sep 2023 &middot; 11 months </b>
+              <p>
+                Full-time internship at ProfoundEdutech, working on front-end
+                development and Java-based technologies. Collaborated with a
+                team to develop web applications using technologies like
+                Hibernate, Spring Framework, and Spring Boot. Contributed to the
+                development of servlets, TypeScript, and MySQL databases,
+                ensuring efficient communication and teamwork.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/jobs.png" />
+            <div>
+              <h3>Summer Intern</h3>
+              <b>RacksonsIt &middot; Full-time</b>
+              <b>April 2019 - July 2019 &middot; 3 months </b>
+              <p>
+                Formerly an intern at RacksonsIt Developer Pvt Ltd, I'm
+                currently a student at FTCOER, continually expanding my web
+                development skills. I'm passionate about creating web solutions
+                that enhance user experiences.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <a href="#" class="experience"
+            >Show all other experiences <img src="images/right-arrow.png"
+          /></a>
+        </div>
+        <div class="profile-desc">
+          <h2>Education</h2>
+          <div class="profile-desc-row">
+            <img src="images/mit.png" />
+            <div>
+              <h3>Fabtech Technical Campus of Engineering and Reasearch</h3>
+              <b>B.Tech, Computer Engineering</b>
+              <b>2020 - 2023</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/mit.png" />
+            <div>
+              <h3>Shree Dutta Polytechnic</h3>
+              <b>Diploma, Computer Engineering</b>
+              <b>2017 - 2019</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="images/mit.png" />
+            <div>
+              <h3>Willingdon College</h3>
+              <b>HSC</b>
+              <b>2015 - 2017</b>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="profile-desc">
+          <h2>Skills</h2>
+          <a href="#" class="skills">Leadership</a>
+          <a href="#" class="skills">Web Design</a>
+          <a href="#" class="skills">Development</a>
+          <a href="#" class="skills">Communication</a>
+          <a href="#" class="skills">UI/UX</a>
+          <a href="#" class="skills">Planning</a>
+          <a href="#" class="skills">Coding</a>
+          <a href="#" class="skills">JavaScript</a>
+          <a href="#" class="skills">Python</a>
+          <a href="#" class="skills">Enterprenuorship</a>
+        </div>
+        <div class="profile-desc">
+          <h2>Languages</h2>
+          <a href="#" class="languages">English</a>
+          <a href="#" class="languages">Marathi</a>
+          <a href="#" class="languages">Hindi</a>
+        </div>
+      </div>
+      <!-------------- Profile Sidebar -------------->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot;&middot;</small>
+          <p>Master the 5 principle of web design</p>
+          <div>
+            <img src="images/profile-pic (1).png" />
+            <img src="images/microsoft.png" />
+          </div>
+          <b>Brand and Demand in Microsoft</b>
+          <a href="#" class="ad-info">Learn More</a>
+        </div>
+        <div class="sidebar-persons">
+          <h3>People you may know</h3>
+          <div class="sidebar-persons-row">
+            <img src="images/user3.jpeg" />
+            <div>
+              <h2>Sumeet Koli</h2>
+              <p>Intern at Cognizant</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-persons">
+          <h3>People you may know</h3>
+          <div class="sidebar-persons-row">
+            <img src="images/user1.jpeg" />
+            <div>
+              <h2>Rahul Kharade</h2>
+              <p>Quality Assurance (QA) Tester at Wipro</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-persons">
+          <h3>People you may know</h3>
+          <div class="sidebar-persons-row">
+            <img src="images/user4.jpeg" />
+            <div>
+              <h2>Vijay Shinde</h2>
+              <p>Sales Excutive at Mankind Pharma</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-persons">
+          <h3>People you may know</h3>
+          <div class="sidebar-persons-row">
+            <img src="images/user2.jpeg" />
+            <div>
+              <h2>Sudarshan Vichare</h2>
+              <p>IT Engineer at Infosys</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-footer">
+      <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessiblity</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+
+        <div class="copyright">
+          <img src="images/logo.png" />
+          <p>LinkedDown &copy; 2022. All right reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

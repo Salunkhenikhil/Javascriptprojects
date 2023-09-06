@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialbook-Demo</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome icons stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!---------- Navigation bar ---------->
+    <nav>
+      <!-- Left section of navigation bar -->
+      <div class="nav-left">
+        <!-- Logo and icons -->
+        <a href="index.html">
+          <!-- Socialbook logo -->
+          <img src="images/logo2.png" class="logo" />
+        </a>
+        <ul>
+          <!-- Notification icon -->
+          <li><img src="images/notification.png" /></li>
+          <!-- Inbox icon -->
+          <li><img src="images/inbox.png" /></li>
+          <!-- Video icon -->
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <!-- Right section of navigation bar -->
+      <div class="nav-right">
+        <!-- Search box -->
+        <div class="search-box">
+          <!-- Search icon -->
+          <img src="images/search.png" />
+          <!-- Search input -->
+          <input type="text" placeholder="Search" />
+        </div>
+        <!-- User profile icon -->
+        <div class="nav-user-icon online" onclick="settingsmenu()">
+          <!-- User profile image -->
+          <img src="images/profile.jpg" alt="" />
+        </div>
+      </div>
+      <!------------ Settings menu ------------>
+      <div class="settings">
+        <!-- Dark mode toggle button -->
+        <div id="dark-button">
+          <span></span>
+        </div>
+        <!-- Inner menu content -->
+        <div class="inner-menu">
+          <!---------- User profile section ---------->
+          <div class="user-profile">
+            <!-- User profile image -->
+            <img src="images/profile.jpg" />
+            <div class="">
+              <!-- User name -->
+              <p>Nikhil Salunkhe</p>
+              <!-- Link to user's profile -->
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <!-- Separator -->
+          <hr />
+          <!---------- Feedback section ---------->
+          <div class="user-profile">
+            <!-- Feedback icon -->
+            <img src="images/feedback.png" />
+            <div class="">
+              <!-- Feedback text -->
+              <p>Give Feedback</p>
+              <!-- Link to provide feedback -->
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <!-- Separator -->
+          <hr />
+          <!---------- Settings links ---------->
+          <div class="settings-links">
+            <!-- Settings icon -->
+            <img src="images/setting.png" class="settings-icon" />
+            <!-- Link to Settings & Privacy -->
+            <a href="#"
+              >Settings & Privacy <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <!-- Other settings links -->
+          <div class="settings-links">
+            <img src="images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <!-- Logout icon -->
+            <img src="images/logout.png" class="settings-icon" />
+            <!-- Link to log out -->
+            <a href="#">Logout <img src="images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile">
+      <!-- Cover image -->
+      <img src="images/cover.png" class="cover" />
+      <div class="profile-details">
+        <div class="profile-left">
+          <div class="pd-row">
+            <!-- User profile image -->
+            <img src="images/profile.jpg" class="pd-image" />
+            <div>
+              <!-- User name and friend count -->
+              <h3>Nikhil Salunkhe</h3>
+              <p>120 friends</p>
+              <!-- User's mutual friends' images -->
+              <img src="images/member-6.jpg" />
+              <img src="images/member-7.jpg" />
+              <img src="images/member-8.jpg" />
+              <img src="images/member-4.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-right">
+          <!-- Friend and Message buttons -->
+          <button type="button">
+            <!-- Add Friend icon -->
+            <img src="images/add-friends.png" />Friend
+          </button>
+          <button type="button">
+            <!-- Message icon -->
+            <img src="images/message.png" />Message
+          </button>
+          <br />
+          <!-- More options link -->
+          <a href="#"><img src="images/more.png" /></a>
+        </div>
+      </div>
+      <!-- User profile information -->
+      <div class="profile-info">
+        <div class="info-col">
+          <!-- Introduction section -->
+          <div class="profile-intro">
+            <!-- Introduction title -->
+            <h3>Intro</h3>
+            <!-- Introductory text with feeling icon -->
+            <p class="intro-text">
+              Believe in Yourself and you can do impossible things.
+              <img src="images/feeling.png" />
+            </p>
+            <hr />
+            <!-- List of user details -->
+            <ul>
+              <li><img src="images/profile-job.png" />Computer Engineer</li>
+              <li>
+                <img src="images/profile-study.png" />Studied at FTCOE, Sangola
+              </li>
+              <li>
+                <img src="images/profile-home.png" />Lives in Mumbai, India
+              </li>
+              <li>
+                <img src="images/profile-location.png" />From Mumbai, India
+              </li>
+            </ul>
+          </div>
+          <!-- Photos section -->
+          <div class="profile-intro">
+            <!-- Photos title with link -->
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+            <!-- Photo thumbnails -->
+            <div class="photo-box">
+              <div><img src="images/photo6.jpg" /></div>
+              <div><img src="images/photo2.jpg" /></div>
+              <div><img src="images/photo3.jpg" /></div>
+              <div><img src="images/photo5.jpg" /></div>
+              <div><img src="images/photo1.jpg" /></div>
+              <div><img src="images/Profile.jpg" /></div>
+            </div>
+          </div>
+          <!-- Friends section -->
+          <div class="profile-intro">
+            <!-- Friends title with link -->
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#">All Friends</a>
+            </div>
+            <!-- Mutual friend count -->
+            <p>120 (Mutual)</p>
+            <!-- List of mutual friends with images and names -->
+            <div class="friends-box">
+              <div>
+                <img src="images/member-6.jpg" />
+                <p>Rahil Baghwan</p>
+              </div>
+              <!-- Repeat for other friends -->
+              <div>
+                <img src="images/member-7.jpg" />
+                <p>Vishal Malage</p>
+              </div>
+              <div>
+                <img src="images/member-8.jpg" />
+                <p>Swapnil Raut</p>
+              </div>
+              <div>
+                <img src="images/member-9.jpg" />
+                <p>Shankar Madne</p>
+              </div>
+              <div>
+                <img src="images/member-1.jpg" />
+                <p>Swapnil Sarvale</p>
+              </div>
+              <div>
+                <img src="images/member-2.jpg" />
+                <p>Akshay Waghmode</p>
+              </div>
+              <div>
+                <img src="images/member-3.jpg" />
+                <p>Ram Dange</p>
+              </div>
+              <div>
+                <img src="images/member-4.jpg" />
+                <p>Nilesh Raut</p>
+              </div>
+              <div>
+                <img src="images/member-5.jpg" />
+                <p>Indrajit Keskar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-col">
+          <!---------- Write post container ---------->
+          <div class="write-post-container">
+            <!---------- User profile and post input ---------->
+            <div class="user-profile">
+              <img src="images/profile.jpg" />
+              <div class="">
+                <p>Nikhil Salunkhe</p>
+                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+              </div>
+            </div>
+            <!---------- Post input and add link options ---------->
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind, Vishal?"
+              ></textarea>
+              <div class="add-link">
+                <a href="#"><img src="images/live-video.png" />Live Video</a>
+                <a href="#"><img src="images/photo.png" />Photo/Video</a>
+                <a href="#"><img src="images/feeling.png" />Feeling/Activity</a>
+              </div>
+            </div>
+          </div>
+          <!---------- Post 1 container ---------->
+          <div class="post-container">
+            <!---------- Post row header ---------->
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile.jpg" />
+                <div>
+                  <p>Nikhil Salunkhe</p>
+                  <span>August 14 2023, 12:30 pm</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <!---------- Post text content ---------->
+            <p class="post-text">
+              Endings are simply beginnings in disguise. Today, we bid farewell
+              to lecture halls and textbooks, but our hearts carry the knowledge
+              of a friendship that has stood the test of time. Onward to new
+              adventures, forever rooted in the stories we've shared.
+              <span>@Vishal Malage, @Swapnil Raut, @Nilesh Raut</span
+              ><a href="#">#FabtechCampus</a><a href="#">#LastDayofCollege</a>
+            </p>
+            <!---------- Post image ---------->
+            <img src="images/feed-image-1.jpg" class="post-img" />
+            <!---------- Activity icons and profile ---------->
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="images/like-blue.png" alt="" />240</div>
+                <div><img src="images/comments.png" alt="" />150</div>
+                <div><img src="images/share.png" alt="" />70</div>
+              </div>
+              <div class="post-profile">
+                <img src="images/Profile.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!---------- More post containers... ---------->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile.jpg" />
+                <div>
+                  <p>Nikhil Salunkhe</p>
+                  <span>August 14 2023, 12:30 pm</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="post-text">
+              As we strike a pose on this bittersweet day, the laughter, the
+              lectures, and the love we've shared throughout college echo in our
+              hearts. Here's to the memories we've made and the adventures that
+              await us.
+              <span>@Vishal Malage, @Swapnil Raut, @Nilesh Raut</span
+              ><a href="#">#FabtechCampus</a><a href="#">#LastDayofCollege</a>
+            </p>
+            <img src="images/feed-image-2.jpg" class="post-img" />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="images/like.png" alt="" />240</div>
+                <div><img src="images/comments.png" alt="" />150</div>
+                <div><img src="images/share.png" alt="" />70</div>
+              </div>
+              <div class="post-profile">
+                <img src="images/Profile.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile.jpg" />
+                <div>
+                  <p>Nikhil Salunkhe</p>
+                  <span>August 14 2023, 12:30 pm</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="post-text">
+              Gathered here, a snapshot of a journey that defies words. We leave
+              these halls as graduates, but also as a family of friends who have
+              journeyed side by side, leaving footprints on each other's
+              hearts.<span>@Vishal Malage, @Swapnil Raut, @Nilesh Raut</span
+              ><a href="#">#FabtechCampus</a><a href="#">#LastDayofCollege</a>
+            </p>
+            <img src="images/feed-image-3.jpg" class="post-img" />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="images/like.png" alt="" />240</div>
+                <div><img src="images/comments.png" alt="" />150</div>
+                <div><img src="images/share.png" alt="" />70</div>
+              </div>
+              <div class="post-profile">
+                <img src="images/Profile.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile.jpg" />
+                <div>
+                  <p>Nikhil Salunkhe</p>
+                  <span>August 14 2023, 12:30 pm</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="post-text">
+              As the final notes linger and the applause subsides, we hold onto
+              this photograph as a tangible reminder of the bonds formed through
+              creativity, shared purpose, and the magic of our annual cultural
+              event.
+              <span>@Vishal Malage, @Swapnil Raut, @Nilesh Raut</span
+              ><a href="#">#FabtechCampus</a><a href="#">#LastDayofCollege</a>
+            </p>
+            <img src="images/feed-image-4.jpg" class="post-img" />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="images/like.png" alt="" />240</div>
+                <div><img src="images/comments.png" alt="" />150</div>
+                <div><img src="images/share.png" alt="" />70</div>
+              </div>
+              <div class="post-profile">
+                <img src="images/Profile.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="images/profile.jpg" />
+                <div>
+                  <p>Nikhil Salunkhe</p>
+                  <span>August 14 2023, 12:30 pm</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="post-text">
+              "United by outfits, divided by the odd one out – but in our
+              circle, differences are what make us unique. Laughter knows no
+              boundaries, and even amidst the contrast, our friendship shines
+              bright. Here's to embracing the quirks that make us who we are, in
+              a brotherhood where 'odd' simply means extraordinary.
+              <span>@Vishal Malage, @Swapnil Raut, @Nilesh Raut</span
+              ><a href="#">#FabtechCampus</a><a href="#">#LastDayofCollege</a>
+            </p>
+            <img src="images/feed-image-5.jpg" class="post-img" />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="images/like.png" alt="" />240</div>
+                <div><img src="images/comments.png" alt="" />150</div>
+                <div><img src="images/share.png" alt="" />70</div>
+              </div>
+              <div class="post-profile">
+                <img src="images/Profile.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- Footer ---------->
+    <div class="footer">
+      <p>Copyright 2023 - Nikhil Salunkhe</p>
+    </div>
+    <!---------- JavaScript file ---------->
+    <script src="index.js"></script>
+  </body>
+</html>
